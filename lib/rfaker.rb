@@ -2,7 +2,10 @@
 
 require_relative "rfaker/version"
 
-module Rfaker
-  class Error < StandardError; end
-  # Your code goes here...
+module RFaker
+  BASE_LIB_PATH = File.expand_path(__dir__)
+
+  require_relative "rfaker/module_utils"
+
+  require_relative "rfaker/address"
 end
